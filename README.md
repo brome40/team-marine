@@ -1,3 +1,7 @@
+# Team Marine Landing Page
+
+This landing page showcases the work of a group of university students in Tokyo, Japan. It provides a space to access resources related to their work centered around families and relationships and contact the team through their social media accounts. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
