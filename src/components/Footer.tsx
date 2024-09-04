@@ -24,6 +24,7 @@ const LinkContainer = styled.div`
   }
   a {
     white-space: nowrap;
+    font-size: 2.5vh;
   }
 `;
 

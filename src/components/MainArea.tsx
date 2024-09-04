@@ -15,10 +15,35 @@ const MainAreaContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background-color: #fcfbe4;
+  background-color: white;
   color: black;
   p {
     font-size: 5.5vh;
+  }
+`;
+const WelcomeBanner = styled.div`
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+  }
+  p {
+    position: absolute;
+    &:nth-child(2) {
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &:nth-child(3) {
+      width: 80%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 `;
 const Content = styled.div`
@@ -27,7 +52,6 @@ const Content = styled.div`
   grid-template-columns: 40% 55%;
   column-gap: 5%;
 `;
-
 const Gallery = styled.div`
   display: grid;
   place-items: center;
@@ -36,11 +60,10 @@ const Gallery = styled.div`
     padding: 2%;
   }
   caption {
-    font-size: 0.7em;
+    font-size: 2.5vh;
     padding: 0 10%;
   }
 `;
-
 const RightContent = styled.div`
   display: grid;
   grid-template-rows: 70% 30%;
@@ -49,7 +72,11 @@ const RightContent = styled.div`
 const MainArea = () => {
   return (
     <MainAreaContainer>
-      <p>良好な家族関係を築くために</p>
+      <WelcomeBanner>
+        <img src={require('../assets/img/背景.jpg')}/>
+        <p><strong>良好な家族関係を築くために</strong></p>
+        <p>私たちは、『家族の不安や悩みを解消しやすい社会』を<br></br>目指して活動しております</p>
+      </WelcomeBanner>
       <Content>
         <Gallery>
           <img src={require('../assets/img/team-img1.jpg')}/>

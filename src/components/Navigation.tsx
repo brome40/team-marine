@@ -12,6 +12,7 @@ const NavigationContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3vh;
   background-color: #83a4e8;
   color: white;
 `;
@@ -19,7 +20,7 @@ const NavigationContainer = styled.nav`
 export const Navigation = ():React.JSX.Element => {
   return (
     <NavigationContainer>
-      Team Marine
+      文京学院大学渡部研究室 Team Marine
     </NavigationContainer>
   )
 }
